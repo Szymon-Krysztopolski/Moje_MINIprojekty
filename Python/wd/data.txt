@@ -1,0 +1,15 @@
+g g g g c
+ID	Weapon	Damage	Attack_speed	HMC	Winrate [%]TTL
+1	Axe	16,55	Slow	10	51,12	4
+2	Blasters	16,625	Normal	11	49,73	8
+3	Bow	15,45	Normal	9	49,47	5,5
+4	Cannon	16,175	Slow	5	50,13	8
+5	Gauntlets	14,4	Fast	10	49,99	6
+6	Grapple_Hammer	17,5	Slow	10	50,51	6
+7	Katars	13,65	Fast	9	49,73	5
+8	Orb	15,2	Normal	5	49,65	6
+9	Rocket_Lance	17,55	Normal	7	51,66	4
+10	Scythe	14,4	Fast	8	49,28	8
+11	Spear	15	Fast	10	50,45	3
+12	Sword	14,8	Fast	11	49,28	3
+13	Greatsword	20,65	Slow	3	48,52	8
