@@ -1,7 +1,7 @@
 # Problem komiwojażera
 Jest to problem NP-zupełny polegający na znalezieniu minimalnego cyklu Hamiltona w pełnym grafie ważonym. W skrócie problem ten polega na rozpoczęciu podróży w jakimś punktcie (np. mieście), a naszym celem jest dotarcie do wszystkich pozostałych punktów na mapie (tylko raz), oraz powrót do początkowego punktu. 
 
-![TSP](link "Optional Title")
+![TSP](https://github.com/Szymon-Krysztopolski/Moje_MINIprojekty/blob/main/C%26C%2B%2B/Problem%20komiwojazera/zdj1.png)
 
 ## Reprezentacja problemu
 Problem może zostać przedstawiony za pomocą macierzy sąsiedztwa. Jest to macież NxN, która zawiera odległości od miasta X do każdego pozostałego. Macierz ta jest symetryczna względem głównej przekątnej (ponieważ z miasta A do B jest taka sam odległość jak z miasta B do A), oraz na głównej przekątnej występują zera (ponieważ miasto A jest oddalone od samego siebie o dokładnie 0). Można zatem kożystać jedynie z górnego/dolnego trójkąta macierzy.
