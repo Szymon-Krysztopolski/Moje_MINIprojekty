@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "cmath": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "*.tcc": "cpp",
+        "algorithm": "cpp",
+        "sstream": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "string": "cpp",
+        "functional": "cpp",
+        "vector": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
