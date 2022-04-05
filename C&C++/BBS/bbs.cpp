@@ -35,7 +35,6 @@ unsigned char* myBBS(unsigned long long blum_num, int len, unsigned long long a,
 		cout << "File not created!"<<endl;
         exit(0);
 	}
-
     int final_len=len;
     if(bits)final_len/=BYTE;
 
@@ -91,6 +90,52 @@ void bbs_encrypt(string file_in,string file_out,string file_key){
 
     if(outFile){
         outFile.write(reinterpret_cast<char*>(&result[0]),result.size());
+        outFile.close();
+    }
+}
+
+void bits2ascii(string file_in,string file_out){
+    vector<char> text_in=ReadAllBytes(file_in);
+    ofstream outFile(file_out, ios::binary);
+    if (!outFile) {
+		cout << "File not created!"<<endl;
+	}
+
+    unsigned char* result=new unsigned char[text_in.size()*BYTE];
+    for(int i=0;i<text_in.size();i++){
+        for(int j=0;j<BYTE;j++){
+            result[i*BYTE+j]=((text_in[i]&(0x80>>j))>0)+ASCII_padd;
+        }
+    }
+
+    if(outFile){
+        outFile.write((char*)result,text_in.size()*BYTE);
+        outFile.close();
+    }
+}
+
+void ascii2bits(string file_in,string file_out){
+    vector<char> text_in=ReadAllBytes(file_in);
+    ofstream outFile(file_out, ios::binary);
+    if (!outFile) {
+		cout << "File not created!"<<endl;
+	}
+
+    unsigned char tmp;
+    unsigned char* result=new unsigned char[text_in.size()/BYTE];
+    for(int i=0;i<text_in.size();i+=BYTE){
+        tmp=text_in[i]-ASCII_padd;
+        for(int j=1;j<BYTE;j++){
+            tmp<<=1;
+            //cout<<(int)text_in[i+j]-ASCII_padd<<" ";
+            tmp|=int(text_in[i+j])-ASCII_padd;
+        }
+        result[i/BYTE]=(unsigned char)tmp;
+        //cout<<(int)(unsigned char)tmp<<" ";
+    }
+
+    if(outFile){
+        outFile.write((char*)result,text_in.size()/BYTE);
         outFile.close();
     }
 }
