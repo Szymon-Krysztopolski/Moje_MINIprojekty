@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "code/Main_pack",
+        "code/steganography"
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
+}
