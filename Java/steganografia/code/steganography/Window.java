@@ -5,25 +5,25 @@ import java.util.*;
 import javax.swing.*;
 
 public class Window {
-    private final int MyFrame_window_width = 800;
-    private final int MyFrame_window_height = 500;
-    private final int button_run_width = 100;
-    private final int button_run_height = 40;
+    private final static int MyFrame_window_width = 800;
+    private final static int MyFrame_window_height = 500;
+    private final static int button_run_width = 100;
+    private final static int button_run_height = 40;
 
-    private final int text_input_width = 200;
-    private final int text_input_height = 40;
+    private final static int text_input_width = 200;
+    private final static int text_input_height = 40;
 
-    private final int RadCb_width = 100;
-    private final int RadCb_height = 40;
+    private static final int RadCb_width = 100;
+    private static final int RadCb_height = 40;
 
-    private final int margin = 40;
-    private final int top_menu_height = 20;
+    private static final int margin = 40;
+    private static final int top_menu_height = 20;
 
-    final String ph_textIn = "text input";
-    final String ph_textOut = "text output";
-    final String ph_fileIn = "file in";
-    final String ph_fileOut = "file out";
-    final String ph_keySeed = "key seed";
+    final static String ph_textIn = "text input";
+    final static String ph_textOut = "text output";
+    final static String ph_fileIn = "file in";
+    final static String ph_fileOut = "file out";
+    final static String ph_keySeed = "key seed";
 
     final static String name_laberWarning = "warning";
     final static String name_textIn = "text input";
@@ -39,7 +39,7 @@ public class Window {
     final static String name_cbText = "text";
     final static String name_Butt = "best button";
 
-    public void start() {
+    public static void start() {
         // ---------------------------------
         JFrame MyFrame = new JFrame();
         MyFrame.setSize(MyFrame_window_width, MyFrame_window_height);
