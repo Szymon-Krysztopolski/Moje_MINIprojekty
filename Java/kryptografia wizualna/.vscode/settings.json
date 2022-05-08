@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "code/Main-pack",
+        "code/visual_cryptogaphy"
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
+}
