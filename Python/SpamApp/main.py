@@ -6,7 +6,7 @@ def main():
     while True:
         match menu():
             case '1':
-                fastSpam(Loops, DelayAfterWord)
+                fastSpam(getLoops(), getDelayAfterWord())
             case '2':
                 manualSpam()
             case '3':

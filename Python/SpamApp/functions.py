@@ -6,6 +6,12 @@ from constants import *
 
 Options = []
 
+Loops = 5
+DelayBeforeSpam = 5
+DelayAfterWord = 0.2
+FileName = "spam.txt"
+FileNameManualSpam = "manual.txt"
+
 
 def menu() -> str:
     os.system("cls")
@@ -19,6 +25,14 @@ def menu() -> str:
     print("e. EXIT")
     print("---------------------------")
     return input("your decision: ")
+
+
+def getLoops() -> int:
+    return Loops
+
+
+def getDelayAfterWord() -> float:
+    return DelayAfterWord
 
 
 def fastSpam(loops: int, delay: int) -> None:
